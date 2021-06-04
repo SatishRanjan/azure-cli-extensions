@@ -77,6 +77,7 @@ def load_command_table(self, _):
                               validator=validate_app_or_slot_exists_in_rg)
         g.custom_command('scale', 'scale_webapp')
         g.custom_command('restart', 'restart_webapp')
+        g.custom_command('test', 'test')
 
     with self.command_group('webapp config container') as g:
         g.custom_command('set', 'update_container_settings')
